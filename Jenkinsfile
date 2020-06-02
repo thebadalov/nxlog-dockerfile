@@ -4,7 +4,7 @@ pipeline {
     stage('Docker Tag') {
       agent any
       steps {
-        sh "docker tag nxlog-ce thebadalov/nxlog-dockerfile:${env.BUILD_NUMBER} ."
+        sh "docker tag nxlog-ce thebadalov/nxlog-dockerfile:${env.BUILD_NUMBER}"
       }
     }
     stage('Docker Push') {
