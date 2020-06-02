@@ -1,12 +1,6 @@
 pipeline {
   agent none
   stages {
-    stage('Dockerfile build'){
-    agent any
-    steps{
-        sh "sudo docker build /home/thebadalov/Dockerfile/"
-      }
-    }
     stage('Docker Tag') {
       agent any
       steps {
