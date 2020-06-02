@@ -4,7 +4,7 @@ pipeline {
     stage('Dockerfile build'){
     agent any
     steps{
-        sh "docker build /home/thebadalov/Dockerfile"
+        sh "docker build /home/thebadalov/Dockerfile/"
       }
     }
     stage('Docker Tag') {
